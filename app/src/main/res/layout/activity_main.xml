@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.secretsinside.estimate.MainActivity">
 
+
+
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="495dp"
@@ -20,106 +22,197 @@
             android:layout_height="wrap_content"
             android:text="Transformer Amount" />
 
-        <EditText
-            android:id="@+id/editTextTransformerAmount"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="8"
-            android:inputType="numberDecimal"
-            android:layout_toRightOf="@+id/textViewTransformerAmount" />
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/editTextTransformerAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@+id/textViewTransformerAmount"
+                android:hint="Enter amount"
+                android:layout_weight="1"/>
 
 
-        <Button
-            android:id="@+id/buttonCalculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/editTextTransformerAmount"
-            android:text="OK" />
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/editTextTransformerAmount"
+                android:text="OK"
+                android:layout_weight="1"/>
 
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:id="@+id/percentLayout"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewTransformerAmount"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="2">
 
-            <TextView
-                android:padding="10dp"
-                android:id="@+id/textViewTwoPercent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2%"
-                android:gravity="center"
-                android:layout_weight="1"/>
 
-            <TextView
-                android:padding="10dp"
-                android:id="@+id/textViewFourPercent"
+            <LinearLayout
                 android:layout_width="wrap_content"
+                android:id="@+id/percentLayout"
                 android:layout_height="wrap_content"
-                android:text="4%"
-                android:gravity="center"
-                android:layout_weight="1" />
-
-            <TextView
-                android:padding="10dp"
-                android:id="@+id/textViewFortyPercent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="40%"
-                android:gravity="center"
                 android:layout_below="@+id/textViewTransformerAmount"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/contingency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contingency @2%"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/tAndP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T and P @2%"
+
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/transportation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transportation @4%"
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textViewFortyPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(-)Old Material @40%"
+
+
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/totalCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Cost"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textViewLabourCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Labour Cost"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonGrandTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:text="Grand Total"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_weight="1"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/contingencyAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/tAndPAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/transportationAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/oldMaterialAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:layout_below="@+id/textViewTransformerAmount"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/totalCostAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/labourCostAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/grandTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+
         </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/percentLayout"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:id="@+id/linearLayout"
-            tools:layout_editor_absoluteY="0dp"
-            tools:layout_editor_absoluteX="8dp">
-
-            <EditText
-                android:id="@+id/twoPercentOfAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:layout_toRightOf="@+id/textViewTransformerAmount"
-                android:layout_weight="1"/>
-
-            <EditText
-                android:id="@+id/fourPercentOfAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:layout_toRightOf="@+id/textViewTransformerAmount"
-                android:layout_weight="1" />
-
-
-            <EditText
-                android:id="@+id/fortyPercentOfAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:layout_toRightOf="@+id/textViewTransformerAmount"
-                android:layout_weight="1" />
-
-
-
-        </LinearLayout>
-
-
-
 
     </LinearLayout>
 
