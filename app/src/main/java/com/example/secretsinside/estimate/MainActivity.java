@@ -1,8 +1,10 @@
-
+//find view by id
+//buttonVar.setOnClickListe
 
 
 package com.example.secretsinside.estimate;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -112,6 +114,17 @@ public class MainActivity extends AppCompatActivity {
                 TotalCost.setText("");
                 EditTextLabourCost.setText("");
                 GrandTotalAmount.setText("");
+
+
+               /* Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+                */
+                return true;
+
+            case R.id.action_setting :
+                Intent intent = new Intent(this, SettingActivity.class);
+                startActivity(intent);
 
                 return true;
 

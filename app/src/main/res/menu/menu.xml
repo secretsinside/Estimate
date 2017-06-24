@@ -9,4 +9,12 @@
         android:title="action_erase"
         app:showAsAction="always" />
 
+
+    <item
+        android:id="@+id/action_setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_setting"
+        app:showAsAction="always"/>
+
+
 </menu>
