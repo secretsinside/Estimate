@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Estimate</string>
+    <string name="title_settings_name">Settings</string>
 </resources>
