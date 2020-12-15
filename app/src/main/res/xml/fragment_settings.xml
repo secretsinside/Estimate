@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Behenchod Loda">
+        <EditTextPreference
+            android:key="loda_key"
+            android:title="Contingency Rate"
+            android:defaultValue="123123123"
+            android:summary="App lode hai"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Anishka ka sach">
+        <ListPreference
+            android:key="lund_key"
+            android:title="T and P rate"
+            android:summary="Anishka nahi chudegi"
+            android:defaultValue="0"
+            android:entries="@array/loda"
+            android:entryValues="@array/lund"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Anishka muh me bhi nahi legi">
+        <CheckBoxPreference
+            android:title="Bhai blowjob nahi milegi"
+            android:key="hjk"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <SwitchPreference android:title="Anishka rand hai?"/>
+
+    <PreferenceCategory android:title="BHAI ISSE KEHTE HAI HAWAS">
+        <Preference android:title="Tharak jagi hui hai mujhme abhi"
+            android:key="lund_ka_baal"
+            android:summary="Bwahahahahahahahhahaha"/>
+    </PreferenceCategory>
+</PreferenceScreen>

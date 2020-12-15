@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/secretsinside/AndroidStudioProjects/Estimate/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/shasha/Forked_Repo/Estimate/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/secretsinside/AndroidStudioProjects/Estimate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6e7293bd65052cd5049506ab58928897cfcfa763/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/secretsinside/AndroidStudioProjects/Estimate/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="f19ef350a01de84e2178b1187b91ad3d3cd8bd5a">
-        <dex dex="/home/secretsinside/AndroidStudioProjects/Estimate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7432847151380de4458b5ab63de5702dd66ded1d/classes.dex" />
+        sha1="cf5a477f2ff8bfc5a33c0b16310a2c4fd1f0413c">
+        <dex dex="/home/shasha/Forked_Repo/Estimate/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3bba3f680572755e8f28c390bfa58bb03cdb98b4/classes.dex" />
     </item>
 
 </items>

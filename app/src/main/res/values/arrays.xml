@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lund">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="loda">
+        <item>Chudegi</item>
+        <item>Nahi chudegi</item>
+    </string-array>
+</resources>
